@@ -61,7 +61,7 @@ namespace EPlayers_11_01_main.Controllers
 
             //Atualiza a lista de equipe na View
             ViewBag.Equipes = equipeModel.ReadAll();
-            return LocalRedirect("~/Equipe/Listar");
+            return LocalRedirect("~/Equipe");
         }
 
         //http://localhost:5000/Equipe/1
@@ -69,7 +69,7 @@ namespace EPlayers_11_01_main.Controllers
         public IActionResult Excluir(int id){
             equipeModel.Delete(id);
             ViewBag.Equipes = equipeModel.ReadAll();
-            return LocalRedirect("~/Equipe/Listar");
+            return LocalRedirect("~/Equipe");
         }
     }
 }
