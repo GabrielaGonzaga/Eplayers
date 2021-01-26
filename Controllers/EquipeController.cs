@@ -13,7 +13,7 @@ namespace EPlayers_11_01_main.Controllers
         {
         Equipe equipeModel = new Equipe();
         //http://localhost:5000/Equipe/Listar
-        [Route("Listar")]
+        
         public IActionResult Index()
         {
             ViewBag.Equipes = equipeModel.ReadAll();

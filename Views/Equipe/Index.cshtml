@@ -28,7 +28,7 @@
             <tr>
                 <td>@equipe.IdEquipe</td>
                 <td>@equipe.Nome</td>
-                <td><img src="/img/Equipes/@equipe.Imagem" alt="iamgem da equipe @equipe.Nome" width="40"></td>
+                <td><img src="~/img/Equipes/@equipe.Imagem" alt="iamgem da equipe @equipe.Nome" width="40"></td>
                 <td><a asp-area= "Link para excluiir uma equipe"asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a></td>
             </tr>
         }
